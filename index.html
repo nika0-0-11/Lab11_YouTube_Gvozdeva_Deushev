@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <a name="top"></a>
     <header class="header">
         <div class="header-left">
             <button class="menu-btn">≡</button>
@@ -22,7 +23,7 @@
         <div class="header-right">
             <button>➕</button>
             <button>🔔</button>
-            <img src="https://placeholder.ru/32" alt="Avatar" class="avatar"/>
+            <img src="/avatar/ava.png" alt="Avatar" class="avatar"/>
         </div>
     </header>
     <div class="content">
@@ -59,107 +60,195 @@
         </aside>
         <main class="main">
             <div class="chips">
-            <div class="chip active">Все</div>
-            <div class="chip">Музыка</div>
-            <div class="chip">Игры</div>
-            <div class="chip">Новости</div>
-            <div class="chip">Спорт</div>
-            <div class="chip">Образование</div>
-            <div class="chip">Технологии</div>
-        </div>
-            <div class="video-grid">
-                <!-- Видео 1 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Обучающее видео по программированию на языке Python</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">890 тыс. просмотров • 3 дня назад</p>
-                        </div>
-                    </div>
-                </article>
-                <!-- Видео 2 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Как создать свой первый сайт за 15 минут</h3>
-                            <p class="channel-name">WebDev Pro</p>
-                            <p class="video-meta">1.5 млн просмотров • 1 неделю назад</p>
-                        </div>
-                    </div>
-                </article>
-                <!-- Видео 3 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">10 лайфхаков для продвинутой работы</h3>
-                            <p class="channel-name">Productivity Tips</p>
-                            <p class="video-meta">450 тыс. просмотров • 5 дня назад</p>
-                        </div>
-                    </div>
-                </article>
-                <!-- Видео 4 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Как подготовиться к собеседыванию за неделю</h3>
-                            <p class="channel-name">Carer Coach</p>
-                            <p class="video-meta">650 тыс. просмотров • 2 дня назад</p>
-                        </div>
-                    </div>
-                </article>
-                <!-- Видео 5 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Топ-5 фреймворков для фронтенда в 2026 году</h3>
-                            <p class="channel-name">Code School</p>
-                            <p class="video-meta">780 тыс. просмотров • 3 недели назад</p>
-                        </div>
-                    </div>
-                </article>
-                <!-- Видео 6 -->
-                <article class="video-card">
-                    <div class="thumbnail">
-                        <img src="https://placehold.ru/320x180" alt="Video" />
-                        <span class="duration">22:15</span>
-                    </div>
-                    <div class="video-info">
-                        <img src="https://placehold.ru/36" alt="Channel" class="channel-avatar" />
-                        <div class="video-details">
-                            <h3 class="video-title">Как я заработал свой первый миллион</h3>
-                            <p class="channel-name">Business Insider</p>
-                            <p class="video-meta">3.4 млн просмотров • 1 месяц назад</p>
-                        </div>
-                    </div>
-                </article>
+                <div class="chip active">Все</div>
+                <div class="chip">Музыка</div>
+                <div class="chip">Игры</div>
+                <div class="chip">Новости</div>
+                <div class="chip">Спорт</div>
+                <div class="chip">Образование</div>
+                <div class="chip">Технологии</div>
+                <div class="chip">Фильмы</div>
+                <div class="chip">Подкасты</div>
             </div>
+
+            <section class="video-section">
+                <h2 class="section-title">Рекомендуемые</h2>
+                <div class="video-grid">
+                    <!-- Видео 1 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/-vaK3f01Oyg/mqdefault.jpg" alt="Video"/>
+                            <span class="duration">16:17</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/1.png" alt="Channel" class="channel-avatar"/>
+                            <div class="video-details">
+                                <h3 class="video-title">БАЗА ЧТОБЫ НАЧАТЬ ПРОГРАММИРОВАТЬ</h3>
+                                <p class="channel-name">Honey Montana</p>
+                                <p class="video-meta">1,2 млн просмотров • 2 года назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 2 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/q3DAzmV1rPs/mqdefault.jpg" alt="Video"/>
+                            <span class="duration">12:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="avatar/1.png" alt="Channel" class="channel-avatar"/>
+                            <div class="video-details">
+                                <h3 class="video-title">Как научиться кодить С НУЛЯ? Вот так)))</h3>
+                                <p class="channel-name">Honey Montana</p>
+                                <p class="video-meta">291 тыс. просмотров • 1 год назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 3 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/YRwlK3cVjbI/mqdefault.jpg" alt="Video" />
+                            <span class="duration">9:36</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="avatar/2.png" alt="Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Переход на Linux. Как это происходит и что вас удивит?</h3>
+                                <p class="channel-name">ZProger [ IT ]</p>
+                                <p class="video-meta">353 тыс. просмотров • 1 год назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 4 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/EeARyFrZsnU/mqdefault.jpg" alt="Video"/>
+                            <span class="duration">8:19</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/4.png" alt="Channel" class="channel-avatar"/>
+                            <div class="video-details">
+                                <h3 class="video-title">Git и GitHub для новичков</h3>
+                                <p class="channel-name">Merion Academy</p>
+                                <p class="video-meta">600 тыс. просмотров • 2 года назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 5 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/ChEdFh7Q-Vw/mqdefault.jpg" alt="Video"/>
+                            <span class="duration">8:44</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/4.png" alt="Channel" class="channel-avatar"/>
+                            <div class="video-details">
+                                <h3 class="video-title">Что такое ООП (объектно-ориентированное программирование)?</h3>
+                                <p class="channel-name">Merion Academy</p>
+                                <p class="video-meta">238 тыс. просмотров • 2 года назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="vidoe-section">
+                <h2 class="section-title">Сейчас в тренде</h2>
+                <!-- Видео 6 -->
+                <div class="video-grid">
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/Bym7UMqpVEY/mqdefault.jpg" alt="Video" />
+                            <span class="duration">22:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="avatar/3.png" alt="Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Базовый курс C++ (MIPT, ILab). Lecture 1. Scent of C++.</h3>
+                                <p class="channel-name">Konstantin Vladimirov</p>
+                                <p class="video-meta">160 тыс. просмотров • 4 года назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 7 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/wczb8BJEwgk/mqdefault.jpg" alt="Video" />
+                            <span class="duration">13:07</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/1.png" alt="Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">ГАЙД НА ТЕРМИНАЛ LINUX</h3>
+                                <p class="channel-name">Honey Montana</p>
+                                <p class="video-meta">639 тыс. просмотров • 1 год назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 8 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/8u6xaEYGLa0/mqdefault.jpg" alt="Video" />
+                            <span class="duration">22:15</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/1.png" alt="Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Гайд на GitHub за 10 минут</h3>
+                                <p class="channel-name">Business Insider</p>
+                                <p class="video-meta">205 тыс. просмотров • 5 месяцев назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 9 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/00-hcWc7_fA/mqdefault.jpg" alt="Video" />
+                            <span class="duration">9:33</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/5.png" alt="Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">Hello World на Ассемблере (x86)</h3>
+                                <p class="channel-name">Псевдо Программист</p>
+                                <p class="video-meta">172 тыс. просмотров • 5 лет назад</p>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Видео 10 -->
+                    <article class="video-card">
+                        <div class="thumbnail">
+                            <img src="https://img.youtube.com/vi/boMaTNuYTyg/mqdefault.jpg" alt="Video" />
+                            <span class="duration">2:25</span>
+                        </div>
+                        <div class="video-info">
+                            <img src="/avatar/6.png" alt="Channel" class="channel-avatar" />
+                            <div class="video-details">
+                                <h3 class="video-title">RX4D - Лучше купи Ryzen (feat. Tessa Amd)</h3>
+                                <p class="channel-name">RX4D</p>
+                                <p class="video-meta">5 млн просмотров • 6 лет назад</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">О нас</a>
+                <a href="#">Пресса</a>
+                <a href="#">Авторские права</a>
+                <a href="#">Контакты</a>
+            </div>
+            <p>&copy; 2026 YouTube Clone</p>
+        </div>
+    </footer>
+
+    <a href="#top" class="scroll-to-top">
+        <span class="icon">↑</span>
+    </a>
 </body>
 </html>
